@@ -38,7 +38,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="w-full bg-light border-b border-muted fixed top-0 z-50">
+      <nav className="w-full bg-light border-b border-muted fixed top-0 z-50 overflow-y-hidden">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
           {/* LEFT: Logo */}

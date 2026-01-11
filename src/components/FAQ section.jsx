@@ -53,7 +53,7 @@ const FAQ = () => {
   const toggle = (index) => setOpenIndex(openIndex === index ? null : index);
 
   return (
-    <section className="max-w-4xl mx-auto px-6 py-16">
+    <section className="max-w-4xl mx-auto px-6 py-16 overflow-hidden">
       {/* Header */}
       <motion.div
         className="text-center mb-20"
@@ -100,7 +100,7 @@ const FAQ = () => {
 
             {/* Question */}
             <button
-              className="w-full flex justify-between items-center px-6 py-4 text-left font-medium text-lg text-neutral"
+              className="w-full flex justify-between items-center px-6 py-4 text-left font-medium text-lg text-neutral "
               onClick={() => toggle(index)}
             >
               {item.question}
