@@ -270,7 +270,7 @@ overflow-x-hidden md:overflow-hidden pt-16 md:pt-0">
           >
             <Bot size={18} className="text-accent flex-shrink-0" />
             <span className="text-sm font-semibold whitespace-nowrap">
-              AI Consultancy
+              AI Assistance
             </span>
           </motion.div>
 
