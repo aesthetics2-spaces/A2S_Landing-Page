@@ -7,8 +7,8 @@ const features = [
   { phase: "Phase 2", title: "3D Visualization", desc: "Walk through your designed spaces in full 3D before purchasing.", icon: Eye },
   { phase: "Phase 3", title: "Vendor Marketplace", desc: "Connect with interior designers, contractors, and material vendors.", icon: Users },
   { phase: "Phase 3", title: "AI Valuation & Forecasting", desc: "AI-powered property price predictions and investment insights.", icon: TrendingUp },
-  { phase: "Phase 4", title: "IoT Energy Management", desc: "Smart home energy tracking and optimization recommendations.", icon: Cpu },
-  { phase: "Phase 4", title: "Blockchain Property Transfer", desc: "Secure, transparent property ownership using blockchain.", icon: Shield },
+  // { phase: "Phase 4", title: "IoT Energy Management", desc: "Smart home energy tracking and optimization recommendations.", icon: Cpu },
+  // { phase: "Phase 4", title: "Blockchain Property Transfer", desc: "Secure, transparent property ownership using blockchain.", icon: Shield },
   { phase: "Phase 4", title: "Predictive Maintenance", desc: "AI-powered forecasting for home repairs and maintenance needs.", icon: Wrench },
   { phase: "Phase 4", title: "Tenant Screening", desc: "Comprehensive tenant profile evaluation for property owners.", icon: Users },
 ];

@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { Twitter, Instagram, Linkedin, Mail } from "lucide-react";
+import { Twitter, Instagram, Linkedin, Mail, icons } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const quotes = [
@@ -16,6 +16,25 @@ const quotes = [
     author: "Juan Montoya",
   },
 ];
+const socialLinks = [
+  {
+    icon: Twitter,
+    link: "https://twitter.com/",
+  },
+  {
+    icon: Instagram,
+    link: "https://www.instagram.com/aestheticstospaces_a2s",
+  },
+  {
+    icon: Linkedin,
+    link: "https://www.linkedin.com/in/a2s-undefined-a036773a5",
+  },
+  {
+    icon: Mail,
+    link: "mailto:aestheticstospaces@gmail.com",
+  },
+];
+
 
 export default function Footer() {
   const [index, setIndex] = useState(0);
@@ -85,18 +104,21 @@ export default function Footer() {
           </div>
 
           {/* Socials */}
-          <div className="flex gap-4">
-            {[Twitter, Instagram, Linkedin, Mail].map((Icon, i) => (
-              <motion.a
-                key={i}
-                whileHover={{ y: -4, scale: 1.1 }}
-                className="w-11 h-11 rounded-full bg-white/10 border border-white/20 flex items-center justify-center"
-                href="#"
-              >
-                <Icon size={18} />
-              </motion.a>
-            ))}
-          </div>
+<div className="flex gap-4">
+{socialLinks.map(({ icon: Icon, link }, i) => (
+  <motion.a
+    key={i}
+    href={link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-11 h-11 rounded-full bg-white/10 border border-white/20 flex items-center justify-center"
+  >
+    <Icon size={18} />
+  </motion.a>
+))}
+
+</div>
+
         </div>
 
         {/* Copyright */}
